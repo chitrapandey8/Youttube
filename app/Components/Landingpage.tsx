@@ -31,7 +31,7 @@ const Landingpage = () => {
         </div>
 
         {/* Scrollable main content */}
-        <div className="flex-1 mt-16 overflow-auto bg-gray-900">
+        <div className="  flex-1 mt-16 overflow-auto bg-gray-900">
           <Mainpage />
         </div>
       </div>

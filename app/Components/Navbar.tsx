@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from 'react';
 import { IoMenu } from "react-icons/io5";
 import image from '../assets/sas.svg';

@@ -8,10 +8,10 @@ import { useStore } from '../store/store'
 const Mainpage = () => {
   const {expanded, expand, collapse } = useStore()
   return (
-    <div>
+    <div className={expanded?` sm:grid md:grid-cols-2 gap-2 2xl:grid-cols-3 `:`sm:grid md:grid-cols-2 2xl:grid-cols-3 gap-2`}>
       {
         youtubeData.map(({id, channel, views, title, thumbnail, age})=>{
-           return (<div className={expanded? `px-3.5 pt-2` : `px-3.5 pt-2`} key={id}>
+           return (<div  className={ expanded? ` ` : ``} key={id}>
             <Link key={id} href={`/video/${id}`}>
               <Card id={id} channel={channel} views={views} title={title} thumbnail={thumbnail} age={age}></Card>
             </Link>
